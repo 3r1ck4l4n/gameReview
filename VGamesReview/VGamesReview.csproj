@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
+    <Content Include="AllGames.aspx" />
     <Content Include="Login.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +86,13 @@
     </Compile>
     <Compile Include="SideBar.Master.designer.cs">
       <DependentUpon>SideBar.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AllGames.aspx.cs">
+      <DependentUpon>AllGames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllGames.aspx.designer.cs">
+      <DependentUpon>AllGames.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
