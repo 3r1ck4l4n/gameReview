@@ -24,21 +24,12 @@ namespace VGamesReview
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl FeaturedGames;
 
         /// <summary>
-        /// Control PopularGames.
+        /// Control container1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl PopularGames;
-
-        /// <summary>
-        /// Control container2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl container2;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl container1;
     }
 }

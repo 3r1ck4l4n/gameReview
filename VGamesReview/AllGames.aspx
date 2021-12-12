@@ -2,15 +2,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div id="FeaturedGames" runat="server">
-        <h2>Featured Games </h2>
-        <div id="container1">
+    <div id="FeaturedGames" class="p-3" runat="server">
+        <h2 class="text-decoration-none">All Games </h2>
+        <div id="container1" runat="server">
         </div>
     </div>
 
-    <div id="PopularGames" runat="server">
-        <h2>Popular Games</h2>
-        <div runat="server" id="container2">
-        </div>
-    </div>
 </asp:Content>

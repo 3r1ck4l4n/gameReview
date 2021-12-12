@@ -22,6 +22,8 @@ namespace VGamesReview
             this.image = image;
         }
 
+        public VideoGame() { 
+        }
         public string NameVideoGame { get => nameVideoGame; set => nameVideoGame = value; }
         public string DescriptionGame { get => descriptionGame; set => descriptionGame = value; }
         public string Specifications { get => specifications; set => specifications = value; }

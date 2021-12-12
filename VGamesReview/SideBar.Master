@@ -13,12 +13,12 @@
 </head>
 <body>
     <form id="form1" runat="server">
-       
-        <div class="d-flex flex-wrap flex-row">
+
+        <div class="d-flex flex-wrap flex-row blockquote">
 
             <!--------------------------------- SIDEBAR---------------------------------------->
             <div class=" bg-gradient-secondary sidebar sidebar-dark accordion h-100">
-                <hr class="sidebar-divider my-0"/>
+                <hr class="sidebar-divider my-0" />
 
             </div>
             <div class="d-flex flex-column flex-shrink-0 p-3 text-primary bg-light" style="width: 20%;">
@@ -28,46 +28,62 @@
                 <hr>
                 <ul class="nav nav-pills flex-column mb-auto my-5">
                     <li class="nav-item my-4">
-                        
-                        <asp:LinkButton ID="LinkButton1" OnClick="link1_Click" runat="server" Cssclass="nav-link link-primary active" Text="Home"><i class="fas fa-home"></i>  Home</asp:LinkButton>
-                       
+
+                        <asp:LinkButton ID="LinkButton1" OnClick="link1_Click" runat="server" CssClass="nav-link link-primary active" Text="Home"><i class="fas fa-home"></i>  Home</asp:LinkButton>
+
                     </li>
                     <li class="nav-item my-4">
-                        <asp:LinkButton ID="LinkButton2" OnClick="link2_Click" runat="server" Cssclass="nav-link link-primary" Text="Categories"><i class="fas fa-list-ul"></i> Categories </asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton2" OnClick="link2_Click" runat="server" CssClass="nav-link link-primary" Text="Categories"><i class="fas fa-list-ul"></i> Categories </asp:LinkButton>
                     </li>
                     <li class="nav-item my-4">
-                        <asp:LinkButton ID="LinkButton3" OnClick="link2_Click" runat="server" Cssclass="nav-link link-primary" Text="All Games"><i class="fas fa-gamepad"></i> All Games </asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton3" OnClick="link2_Click" runat="server" CssClass="nav-link link-primary" Text="All Games"><i class="fas fa-gamepad"></i> All Games </asp:LinkButton>
                     </li>
-                  
+
                 </ul>
-                <hr Cssclass=" my-5">
+                <hr cssclass=" my-5">
                 <div class="mt-5">
-                    <div class="mt-5 ">
-                        <span class="mt-5 d-block text-center"><small>Team A .NET UPIICSA </small></span>
-                        <span class="d-block text-center "><i class="fas fa-copyright"></i><small>2021.</small>  </span>
-                        <span class="d-block text-center"><small>TODOS LOS DERECHOS RESERVADOS</small> </span>
+                    <div class="mt-5 mb-4">
+                        <span class="mt-5 d-block text-center"><small><small>Team A .NET UPIICSA </small></small></span>
+                        <span class="d-block text-center "><small><small><i class="fas fa-copyright"></i>2021.</small></small>  </span>
+                        <span class="d-block text-center"><small><small>TODOS LOS DERECHOS RESERVADOS</small></small> </span>
                     </div>
 
                 </div>
             </div>
-            <div style="width:80%">
-                <nav class="navbar bg-light w-100" style="height:fit-content">
-                <ul class=" d-flex flex-row">
-                    &nbsp<li class="nav-link">Profile</li>&nbsp
-                    &nbsp<li class="nav-link">Trends</li>&nbsp
-                    &nbsp<li class="nav-link">Community</li>&nbsp
-                   &nbsp <li class="nav-link">Community</li>&nbsp
-                   &nbsp <li class="nav-link">Login</li>&nbsp
-                   &nbsp <li class="nav-link">Register</li>&nbsp
-                </ul>
+            <div style="width: 80%">
+                <nav class="navbar bg-light w-100" style="height: fit-content">
+                    <ul class=" d-flex flex-row">
+                        &nbsp<li class="nav-link">Profile</li>
+                        &nbsp
+                    &nbsp<li class="nav-link">Trends</li>
+                        &nbsp
+                    &nbsp<li class="nav-link">Community</li>
+                        &nbsp
+                   &nbsp
+                        <li class="nav-link">Community</li>
+                        &nbsp
+                   &nbsp
+                        <li class="nav-link">Login</li>
+                        &nbsp
+                   &nbsp
+                        <li class="nav-link">Register</li>
+                        &nbsp
+                    </ul>
                 </nav>
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                </asp:ContentPlaceHolder>
+                <div class="h-75">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="blockquote-footer bg-light">
+                    <footer class="h-25">
+                        <p class="text-center"><small>Games Review <i class="fas fa-copyright"></i></small></p>
+                    </footer>
+                </div>
             </div>
-            
-            
 
-          
+
+
+
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 

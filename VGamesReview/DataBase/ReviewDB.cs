@@ -7,5 +7,6 @@ namespace VGamesReview.DataBase
 {
     public class ReviewDB
     {
+
     }
 }

@@ -70,6 +70,7 @@
     <Content Include="Web.config" />
     <Content Include="AllGames.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="GameDetail.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBase\ReviewDB.cs" />
@@ -100,6 +101,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameDetail.aspx.cs">
+      <DependentUpon>GameDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameDetail.aspx.designer.cs">
+      <DependentUpon>GameDetail.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
