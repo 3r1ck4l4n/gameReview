@@ -33,10 +33,10 @@
 
                     </li>
                     <li class="nav-item my-4">
-                        <asp:LinkButton ID="LinkButton2" OnClick="link2_Click" runat="server" CssClass="nav-link link-primary" Text="Categories"><i class="fas fa-list-ul"></i> Categories </asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton2"  runat="server" CssClass="nav-link link-primary" Text="Categories"><i class="fas fa-list-ul"></i> Categories </asp:LinkButton>
                     </li>
                     <li class="nav-item my-4">
-                        <asp:LinkButton ID="LinkButton3" OnClick="link2_Click" runat="server" CssClass="nav-link link-primary" Text="All Games"><i class="fas fa-gamepad"></i> All Games </asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton3"  runat="server" CssClass="nav-link link-primary" Text="All Games"><i class="fas fa-gamepad"></i> All Games </asp:LinkButton>
                     </li>
 
                 </ul>
@@ -51,34 +51,33 @@
                 </div>
             </div>
             <div style="width: 80%">
-                <nav class="navbar bg-light w-100" style="height: fit-content">
-                    <ul class=" d-flex flex-row">
-                        &nbsp<li class="nav-link">Profile</li>
+                <nav class="navbar bg-light w-100 justify-content-between" style="height: fit-content">
+                    <ul runat="server" id="navbar1" class="nav d-flex flex-row flex-nowrap justify-content-around ">
+                        &nbsp  &nbsp  &nbsp<li class="nav-item"> <asp:LinkButton ID="LinkButton4"  runat="server" CssClass="nav-link link-primary" Text="Trends"> Trends </asp:LinkButton></li>
                         &nbsp
-                    &nbsp<li class="nav-link">Trends</li>
+                        &nbsp &nbsp  &nbsp<li class="nav-item"> <asp:LinkButton ID="LinkButton5"  runat="server" CssClass="nav-link link-primary" Text="Community">Community</asp:LinkButton></li>
                         &nbsp
-                    &nbsp<li class="nav-link">Community</li>
+                        &nbsp &nbsp  &nbsp<li class="nav-item" id="linkD1" runat="server"></li>
                         &nbsp
-                   &nbsp
-                        <li class="nav-link">Community</li>
+                        &nbsp &nbsp &nbsp<li class="nav-item" id="linkD2" runat="server"></li>
                         &nbsp
-                   &nbsp
-                        <li class="nav-link">Login</li>
-                        &nbsp
-                   &nbsp
-                        <li class="nav-link">Register</li>
+                        &nbsp &nbsp &nbsp<li class="nav-item d-flex flex-row justify-content-end" id="linkD3" runat="server"></li>
                         &nbsp
                     </ul>
                 </nav>
-                <div class="h-75">
-                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                    </asp:ContentPlaceHolder>
+                <div class="h-75 mt-2">
+                    <div class="container-fluid mb-5">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    
+                    <div class="  mt-5 blockquote-footer">
+                        <footer class="bg-light mt-5 h-25 blockquote-footer">
+                            <p class="text-center"><small>Games Review <i class="fas fa-copyright"></i></small></p>
+                        </footer>
+                    </div>
                 </div>
-                <div class="blockquote-footer bg-light">
-                    <footer class="h-25">
-                        <p class="text-center"><small>Games Review <i class="fas fa-copyright"></i></small></p>
-                    </footer>
-                </div>
+
             </div>
 
 

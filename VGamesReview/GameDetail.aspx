@@ -6,7 +6,7 @@
     <div runat="server" id="container1">
 
     </div>
-    <div  runat="server" id="reviews">
+    <div class="border-primary border-1 mt-5" runat="server" id="reviewsContainer">
 
     </div>
     <div  runat="server" id="reviewForm" class="w-50 mx-auto" >
@@ -18,6 +18,8 @@
         </asp:DropDownList>
 
         <asp:Button ID="Submit" runat="server" Text="Submit" OnClick="Submit_Click" />
+
+        <div runat="server" id="errorLogged" class="alert-danger"></div>
     </div>
     
 </asp:Content>

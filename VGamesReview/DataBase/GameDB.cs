@@ -20,7 +20,7 @@ namespace VGamesReview
                 SqlDataReader dataReader = sqlCommand.ExecuteReader();
                 while (dataReader.Read())
                 {
-                    VideoGame game = new VideoGame(Int16.Parse(dataReader.GetValue(0).ToString()), dataReader.GetValue(1).ToString(), dataReader.GetValue(2).ToString(), dataReader.GetValue(3).ToString(), dataReader.GetValue(4).ToString());
+                    VideoGame game = new VideoGame(Int16.Parse(dataReader.GetValue(0).ToString()), dataReader.GetValue(1).ToString(), dataReader.GetValue(2).ToString(), dataReader.GetValue(3).ToString(), dataReader.GetValue(4).ToString(), dataReader.GetValue(5).ToString());
                     games.Add(game);
                 }
             }
@@ -46,7 +46,7 @@ namespace VGamesReview
                 game = new VideoGame();
                 while (dataReader.Read())
                 {
-                    game = new VideoGame(Int16.Parse(dataReader.GetValue(0).ToString()), dataReader.GetValue(1).ToString(), dataReader.GetValue(2).ToString(), dataReader.GetValue(3).ToString(), dataReader.GetValue(4).ToString());
+                    game = new VideoGame(Int16.Parse(dataReader.GetValue(0).ToString()), dataReader.GetValue(1).ToString(), dataReader.GetValue(2).ToString(), dataReader.GetValue(3).ToString(), dataReader.GetValue(4).ToString(),dataReader.GetValue(5).ToString());
                     System.Diagnostics.Debug.WriteLine(Int16.Parse(dataReader.GetValue(0).ToString())+ dataReader.GetValue(1).ToString()+ dataReader.GetValue(2).ToString()+ dataReader.GetValue(3).ToString()+ dataReader.GetValue(4).ToString());
                 }
             }

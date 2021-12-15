@@ -10,11 +10,11 @@ namespace VGamesReview.DataBase
    
     public class UserDB : DBConnection
     {
-        public int usua;
-        public bool LoginU(string email, string pass) {
+        
+        public User LoginU(string email, string pass) {
             OpenConnetion();
             User user;
-            string query = "select * from USERS where password_user=@pass and EMAIL_USER=@email";
+            string query = "SELECT * FROM USERS WHERE PASSWORD_USER = @pass and EMAIL_USER= @email";
             try
             {
                 SqlCommand sqlCommand = new SqlCommand(query, cnx);
@@ -24,13 +24,12 @@ namespace VGamesReview.DataBase
                user = new User();
                 while (dataReader.Read())
                 {
-                   user = new User(Int16.Parse(dataReader.GetValue(0).ToString()), dataReader.GetValue(1).ToString(), dataReader.GetValue(2).ToString(), dataReader.GetValue(3).ToString());
+                   user = new User(Int16.Parse(dataReader.GetValue(0).ToString()), dataReader.GetValue(1).ToString(), dataReader.GetValue(4).ToString(), dataReader.GetValue(3).ToString());
                     System.Diagnostics.Debug.WriteLine(Int16.Parse(dataReader.GetValue(0).ToString()) + dataReader.GetValue(1).ToString() + dataReader.GetValue(2).ToString() + dataReader.GetValue(3).ToString() + dataReader.GetValue(4).ToString());
                 }
                 if (user.NameUser != null )
                 {
-                    usua = user.IdUser;
-                    return true;
+                    return user;
                 }
             }
             catch (Exception e)
@@ -38,7 +37,32 @@ namespace VGamesReview.DataBase
                 System.Diagnostics.Debug.WriteLine(e);
                 user = new User();
             }
-            return false;
+            return user;
         }
+
+        public int RegisterUser(User user)
+        {
+            int succes = 0;
+
+            OpenConnetion();
+            string query = "INSERT INTO USERS VALUES(@NAME, @PASS, @EMAIL, @IMAGE);";
+
+            try
+            {
+                SqlCommand sqlCommand = new SqlCommand(query, cnx);
+                sqlCommand.Parameters.AddWithValue("@NAME", user.NameUser.ToString());
+                sqlCommand.Parameters.AddWithValue("@PASS", user.Password.ToString());
+                sqlCommand.Parameters.AddWithValue("@EMAIL", user.EmailUSer.ToString());
+                sqlCommand.Parameters.AddWithValue("@IMAGE", user.ImageUser.ToString());
+                succes = sqlCommand.ExecuteNonQuery();
+                return succes;
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine(e);
+                return succes;
+            }
+        }
+
     }
 }

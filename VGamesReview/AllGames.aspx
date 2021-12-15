@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="FeaturedGames" class="p-3" runat="server">
         <h2 class="text-decoration-none">All Games </h2>
-        <div id="container1" runat="server">
+        <div id="container1" class="container-fluid d-flex flex-wrap" runat="server">
         </div>
     </div>
 

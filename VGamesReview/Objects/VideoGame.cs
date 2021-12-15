@@ -11,14 +11,16 @@ namespace VGamesReview
         private string nameVideoGame;
         private string descriptionGame;
         private string specifications;
+        private string category;
         private string image;
 
-        public VideoGame(int id_game,string nameVideoGame, string descriptionGame, string specifications, string image)
+        public VideoGame(int id_game,string nameVideoGame, string descriptionGame, string specifications, string category, string image)
         {
             this.id_game = id_game;
             this.nameVideoGame = nameVideoGame;
             this.descriptionGame = descriptionGame;
             this.specifications = specifications;
+            this.category = category;
             this.image = image;
         }
 

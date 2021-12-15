@@ -19,7 +19,7 @@ namespace VGamesReview
             Label label = new Label();
             foreach (VideoGame vg in games){
                 System.Diagnostics.Debug.WriteLine(vg.Id_game+ "*********"+vg.NameVideoGame+ "********" + vg.DescriptionGame + "**********"+ vg.Specifications);
-                container1.InnerHtml = "<a class='text-decoration-none' href='GameDetail.aspx?id=" + vg.Id_game + "'><div class='card w-25'> " + "<img src='"+ vg.Image+ "'> "+ "<p class='text-primary'>"+ vg.NameVideoGame + "</p>"+
+                container1.InnerHtml += "<a class='text-decoration-none d-block  w-25' href='GameDetail.aspx?id=" + vg.Id_game + "'><div class='card w-100'> " + "<img src='"+ vg.Image+ "'> "+ "<p class='text-primary text-center'>"+ vg.NameVideoGame + "</p>"+
                     "</div></a>";
             }
             

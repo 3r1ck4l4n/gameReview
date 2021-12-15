@@ -12,12 +12,13 @@ namespace VGamesReview.Objects
         private int idGame;
         private string descriptionReview;
         private int scoreGame;
-
+        private User user;
         public int IdReview { get => idReview; set => idReview = value; }
         public int IdUser { get => idUser; set => idUser = value; }
         public int IdGame { get => idGame; set => idGame = value; }
         public string DescriptionReview { get => descriptionReview; set => descriptionReview = value; }
         public int ScoreGame { get => scoreGame; set => scoreGame = value; }
+        public User User { get => user; set => user = value; }
 
         public Review(int idUser, int idGame, string descriptionReview, int scoreGame)
         {
@@ -27,6 +28,14 @@ namespace VGamesReview.Objects
             this.scoreGame = scoreGame;
         }
 
+        public Review(int idUser, int idGame, string descriptionReview, int scoreGame, User user)
+        {
+            this.idUser = idUser;
+            this.idGame = idGame;
+            this.descriptionReview = descriptionReview;
+            this.scoreGame = scoreGame;
+            this.user = user;
+        }
         public Review()
         {
         }

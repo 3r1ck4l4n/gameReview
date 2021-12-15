@@ -16,7 +16,7 @@
                 <label for="password" class="form-label text-primary">Password</label>
                 <input id="Password1" type="password" runat="server" class="form-control w-75 m-auto" />
             </div>
-            <asp:Button class="btn-primary form-control w-25 mx-auto mt-5" runat="server" Text="Start" />
+            <asp:Button class="btn-primary form-control w-25 mx-auto mt-5" runat="server" Text="Start" OnClick="Unnamed1_Click" />
         </div>
         
 

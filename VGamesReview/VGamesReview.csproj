@@ -71,6 +71,7 @@
     <Content Include="AllGames.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="GameDetail.aspx" />
+    <Content Include="RegisterUser.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBase\ReviewDB.cs" />
@@ -108,6 +109,13 @@
     </Compile>
     <Compile Include="GameDetail.aspx.designer.cs">
       <DependentUpon>GameDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterUser.aspx.cs">
+      <DependentUpon>RegisterUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterUser.aspx.designer.cs">
+      <DependentUpon>RegisterUser.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
